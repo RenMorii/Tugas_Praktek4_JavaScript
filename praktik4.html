@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let beratMadan = 60;
+        let tinggiMadan = 1.6;
+        let beratJoan = 64;
+        let tinggiJoan = 1.65;
+        let joanIMT = beratJoan / tinggiJoan ** 2;
+        let madanIMT = beratMadan / tinggiMadan ** 2;
+        const madanHigherIMT = madanIMT > joanIMT;
+
+        console.log(`MadanIMT = ${madanIMT}`)
+        console.log(`joanIMT = ${joanIMT}`)
+        console.log(`MadanIMT = ${madanHigherIMT}`)
+
+        if (madanIMT > joanIMT) {
+            console.log(`Nilai IMT Madan (${(madanIMT)}) lebih tinggi dari joan (${(joanIMT)})`)
+        } else {
+            console.log(`Nilai IMT joan (${(joanIMT)}) lebih tinggi dari Madan (${(madanIMT)})`)
+    }
+    </script>
+</body>
+</html>
